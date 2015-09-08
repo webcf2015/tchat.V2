@@ -1,0 +1,588 @@
+/*Configuration de base*/
+div, html, body, span, h1, h2, h3, h4, h5, h6, p, ing, i, om, ul, li
+{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+
+a{ text-decoration:none;}
+.clear{ clear:both;}
+img{ max-width:100%;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+
+body
+{
+    position: relative;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(../img/gray.jpg) no-repeat;
+    background-size: cover;
+}
+
+body a,form li,.submit input[type="submit"]
+{
+    transition: 0.5s all;
+}
+
+.connexion
+{
+    width: 100%;
+    height:100%;
+    text-align: center;
+}
+
+.connexion h1, .container h1
+{
+    color:#fff;
+    font-size:2em;
+    padding-top:1em;
+    font-family: 'Anton', sans-serif;
+}
+
+.login-head
+{
+    /*border:1px solid #F90;*/
+    background:#ffc50c;
+    padding:.8em 1em;
+    text-align:center;
+    position:relative;
+}
+
+.login-head span
+{
+    background: url(../img/tip.png) no-repeat 0px 0px;
+    width:30px;
+    height:13px;
+    position:absolute;
+    bottom:-12px;
+    left:203px;
+    display: inline-block;
+}
+
+.connect
+{
+    width:28%;
+    margin: 2% auto;
+    background:#fff;
+    text-align: center;
+    border-bottom:3px solid #ffc50c;
+}
+
+.login-head h2
+{
+    font-size:1.8em;
+    color:#fff;
+    font-weight:500;
+}
+
+form
+{
+    padding:16% 9%;
+}
+
+form li
+{
+    list-style:none;
+    border:none;
+    margin-bottom:25px;
+    width:100%;
+    background:#dfdfdf;
+}
+
+.icon
+{
+    height:45px;
+    width:46px;
+    display:block;
+    float:left;
+    margin:1px -13px 0 0;
+}
+
+.user
+{
+    background:url(../img/icon.png) no-repeat 0 -1px #ffc50c;
+}
+
+.kumba
+{
+    background: url(../img/icon.png) no-repeat -49px 0px #ffc50c;
+}
+
+input[type="text"], input[type="password"]
+{
+    width:60%;
+    padding:0.8em 4em 0.8em 1.7em;
+    color:#858282;
+    font-size:17px;
+    outline:none;
+    background:none;
+    border:none;
+}
+
+input[type=submit]
+{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 13px 10px;
+    width: 100%;
+    border: none;
+    background: #ffc50c;
+    margin-top:1em;
+}
+
+input[type=submit]:hover
+{
+    background:#d13e2f;
+}
+
+h6
+{
+    float:right;
+}
+
+.version-2
+{
+    margin-top:1em;
+}
+
+/*-----debut responsive----*/
+@media (max-width:1440px)
+{
+    .connect
+    {
+        width:31%;
+    }
+}
+
+@media (max-width:1366px)
+{
+    .connect
+    {
+        width:32%;
+    }
+}
+
+@media (max-width:1280px)
+{
+    .connect
+    {
+        width:35%;
+    }
+}
+
+@media (max-width:1024px)
+{
+    .connect
+    {
+        width:43%;
+    }
+    .login-head h2
+    {
+        font-size:1.5em;
+    }
+}
+
+@media (max-width:786px)
+{
+    .connect
+    {
+        width:58%;
+    }
+
+    form
+    {
+        padding:12% 6%;
+    }
+}
+
+@media (max-width:640px)
+{
+    .connect
+    {
+        width:70%;
+    }
+}
+
+.version-2 .checkbox
+{
+    float:left;
+    margin-right:30px;
+}
+
+.version-2 .checkbox
+{
+    padding-left:40px;
+    font-size:16px;
+    line-height:14px;
+    color:#858282;
+    cursor:pointer;
+}
+
+.version-2 .checkbox
+{
+    position:relative;
+    display:block;
+}
+
+.version-2  h6 a 
+{
+    float: right;
+    color: #898989;
+}
+
+.version-2  h6 a:hover
+{
+    text-decoration: underline;
+}
+
+label.checkbox 
+{
+    float: left;
+    margin-top: 3px;
+}
+
+.connect h5 a,.connect  h5 
+{
+    color: #898989;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.connect h5 a:hover
+{
+    text-decoration: underline;
+}
+/*----page tchat----*/
+.container
+{
+    /*border:1px solid red;*/
+}
+
+header
+{
+    text-align:center;
+}
+
+.user-grille
+{
+    text-align:center;
+}
+
+.top-grille
+{
+    /*border:1px solid #F90;*/
+    margin:1em 0 1em 0;
+}
+
+.connect-user
+{
+    /*border:1px solid #999;*/
+    float:right;
+
+}
+
+.user-icon img, .icon-recup
+{
+    border:1px solid transparent;
+    border-radius:50%;
+}
+
+.gauche
+{
+    /*	border:1px solid #693;*/
+    background:#e3dbe8;
+    padding:3em 1em;
+    text-align:center;
+    width:72%;
+}
+
+.gauche h4
+{
+    color:#000;
+    font-size:14px;
+    font-weight:600;
+    margin: 1em 0 0 0;
+}
+
+.gauche p
+{
+    color:#949297;
+    font-size:12px;
+    font-style:italic;
+    margin-bottom:.5em;
+}
+
+.user-bas
+{
+    /*border:1px solid #F9F;*/
+}
+
+.user-bas ul
+{
+    padding:0;
+    margin:0;
+}
+
+.user-bas ul li
+{
+    display: inline-block;
+    float: left;
+    border-right: solid 1px #FFF;
+}
+
+.user-bas ul li:nth-child(2)
+{
+    border-right:none;
+}
+
+.user-bas ul li a
+{
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    padding: .5em 2.8191em;
+    display: block;
+    background: #e85c2b;
+    text-decoration: none;
+}
+
+.user-bas ul li a:hover
+{
+    background:#a6c647;
+}
+
+.user-bas ul li a span
+{
+    display:block;
+    font-size:12px;
+    font-style:italic;
+}
+
+.titre
+{
+    background:#702c91;
+    padding: 1em 1em 2em 1em;
+    position:relative;
+    margin-bottom:1em;
+}
+
+.filactere
+{
+    background:url(../img/tip2.png) no-repeat 0 0;
+    width:30px;
+    height:13px;
+    position:absolute;
+    display:inline-block;
+    bottom:-14px;
+    left:403px;
+}
+
+.titre h2
+{
+    font-size:2em;
+    color:#fff;
+    font-weight:bold;
+    text-transform:uppercase;
+    width:40%;
+    float:left;
+}
+
+.bull-info
+{
+    /*border:1px solid #C63;*/
+    width:40%;
+    float:right;
+}
+
+.bull-1 
+{
+    background:#0C0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: right;
+    border-radius: 50%;
+    margin: 16px 10px 0px 0px;
+}
+
+.bull-2 
+{
+    background:#F90;
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: right;
+    border-radius: 50%;
+    margin: 16px 10px 0px 0px;
+}
+
+.bull-3 
+{
+    background:#F00;
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: right;
+    border-radius: 50%;
+    margin: 16px 10px 0px 0px;
+}
+
+
+
+/*fenetre tchat*/
+.tchat-grille
+{
+    /*border:1px solid #FFF;*/
+    float:left;
+}
+
+.text
+{
+    /*border: 1px solid black;*/
+    padding:1em;
+    overflow:auto;
+    max-height:30em;
+    background:#FFF;
+}
+
+.formulaire
+{
+    /*border: 1px solid yellowgreen;*/
+    background:#a884c2;
+    padding:1em 1em 2em 1em;
+    margin-top:1em;
+}
+
+textarea
+{
+    width:70%;
+    padding:1.12em 1em;
+    outline:none;
+    background:#fff;
+    border:none;
+    border-radius:0 .3em  .3em  0;
+    resize:none;
+    height:8em;
+}
+
+button
+{
+    color:#fff;
+    cursor:pointer;
+    outline:none;
+    padding:.6em .6em;
+    width:20%;
+    border:2px solid #f79d29;
+    float:right;
+    background:#f79d29;
+    border-radius:.3em;
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+button:hover
+{
+    background:#3F9;
+    transition: 0.5s all;
+    border:2px solid #3f9;
+}
+
+.msg
+{
+    height:55px;
+    width:55px;
+    display: block;
+    float: left;
+    border-radius: 0.3em 0 0 0.3em;
+    background: url(../img/msg.png) no-repeat 16px 16px #f79d29;
+}
+.lepost
+{
+    width: 95%;
+    padding: 0.4em;
+    border-radius: 3px;
+    /* border: 0.09em solid lightgrey;*/
+    display: inline-block;
+}
+
+.message
+{
+    float:left; 
+    margin-right:1em
+}
+
+.msg-1
+{
+    width:85%; 
+    float:left;
+    /*border:1px solid #90F;*/
+    padding:.3em .8em .8em .8em;
+    background:#D7DFE3;
+    border-radius:.3em;
+    position:relative;
+}
+
+.msg-1 i
+{
+    display:block;
+    width:15px;
+    height:15px;
+    transform: rotate(45deg);
+    position:absolute;
+    top:10px;
+    left:-7px;
+    background:#d7dfe3;
+}
+
+.login
+{
+    font-size:1em; 
+    font-weight:bolder;
+    color:#333;
+    margin-top:3px;
+}
+
+.ladate
+{
+    color:#999;
+    font-size:.6em;
+    font-style:italic;
+    display:block;
+    margin-bottom:5px;
+}
+
+#chargement
+{
+    color:#666;
+    font-style:italic;
+    font-size:.8em;
+    margin-left:4em;
+    margin-top:1em;
+}
+
+/*
+.formulaire
+{
+   border: 1px solid yellowgreen;
+   min-height: 11em;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+}
+.formulaire *{
+   display: inline-block;
+}
+#envoi{
+   
+   width: 50%;
+   height: 100px;
+}
+*/
